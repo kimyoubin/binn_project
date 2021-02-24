@@ -1,0 +1,23 @@
+[
+  {
+    "name": "styleGuide",
+    "path": "/styleGuide",
+    "component": "D:\\\\mini Project\\\\pages\\\\styleGuide.vue",
+    "chunkName": "pages/styleGuide",
+    "_name": "_11c7c78b"
+  },
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "D:\\\\mini Project\\\\pages\\\\test.vue",
+    "chunkName": "pages/test",
+    "_name": "_14285ad2"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\mini Project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_ec8e8a7c"
+  }
+]
