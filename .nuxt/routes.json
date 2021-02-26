@@ -2,22 +2,22 @@
   {
     "name": "styleGuide",
     "path": "/styleGuide",
-    "component": "D:\\\\mini Project\\\\pages\\\\styleGuide.vue",
+    "component": "D:\\\\_youbin_startup\\\\pages\\\\styleGuide.vue",
     "chunkName": "pages/styleGuide",
-    "_name": "_11c7c78b"
+    "_name": "_246284e4"
   },
   {
     "name": "test",
     "path": "/test",
-    "component": "D:\\\\mini Project\\\\pages\\\\test.vue",
+    "component": "D:\\\\_youbin_startup\\\\pages\\\\test.vue",
     "chunkName": "pages/test",
-    "_name": "_14285ad2"
+    "_name": "_33d661d6"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\mini Project\\\\pages\\\\index.vue",
+    "component": "D:\\\\_youbin_startup\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_ec8e8a7c"
+    "_name": "_154a6242"
   }
 ]

@@ -4,8 +4,8 @@
 			v-for="(item, key) of items"
 			:key="key"
 			:class="listNum" 
-			@click="$emit('click', item)"
-			class="list">
+			class="list"
+			@click="$emit('click', item)"><!--3. 리스트를 클릭할때마다 tab02Section01에 있는 thumbList의 각각의 item을 호출(?)한다. tab02Section01에 있는 'click'이라는 함수?를 연결시켜줌-->
 			<nuxt-link to="">
 				<img :src="item.storeImg" alt="">
 				<div class="info">

@@ -21,7 +21,7 @@
 		<div class="wrap thumb-list">
 			<tab-02-section-01-thumb-list
 				:items="thumbList"
-				@click="modalOn">
+				@click="modalOn"><!-- 4.tab02Section01ThumbList 에서 emit한 click을 연결시킨다. -->
 			</tab-02-section-01-thumb-list>
 		</div>
 
@@ -35,14 +35,13 @@
 			colorType="modal-pink"
 			padding="pd50"
 			v-show="step01Modal"
-			:activeInfo="activeInfo"
 			@close="close">
             <template slot="title">내 마음 속의 <i class="point">최애 한우인증점 Pick!</i></template>
 			
 			<template slot="content">
 				
 				<!-- top-area -->
-				<tab-02-section-01-store-info :activeInfo="activeInfo" />
+				<tab-02-section-01-store-info :activeInfo="activeInfo" /><!-- 1. activeInfo 라는 객체를 여기에 바인딩 해준다. -->
 				<!-- swiper -->
 				<div class="swiper">
 					<client-only>
@@ -238,9 +237,11 @@ export default class Tab02Section01 extends Vue {
 		},
 	}
 	
-	modalOn(targetObj: object) {
-		this.step01Modal = !this.step01Modal
-		this.activeInfo = targetObj;		
+	// 5. modalOn의 함수내에 list를 클릭할때마다 activeInfo 에 targetObj라는 인자값에 담는다.
+	// 6. modalOn(targetObj < 이것은 click할때마다 thumbList의 item이 들어간다.)
+	modalOn(targetObj : Object) {
+		this.step01Modal = !this.step01Modal	
+		this.activeInfo = targetObj
 	}
 
 	close() {

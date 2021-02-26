@@ -12,9 +12,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_1bc601a5 from 'nuxt_plugin_plugin_1bc601a5' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_plugin_6770a46f from 'nuxt_plugin_plugin_6770a46f' // Source: .\\vuetify\\plugin.js (mode: 'all')
-import nuxt_plugin_axios_3adf0548 from 'nuxt_plugin_axios_3adf0548' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_c46d76a0 from 'nuxt_plugin_plugin_c46d76a0' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_plugin_43379578 from 'nuxt_plugin_plugin_43379578' // Source: .\\vuetify\\plugin.js (mode: 'all')
+import nuxt_plugin_axios_5fbe40d3 from 'nuxt_plugin_axios_5fbe40d3' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_swiper_076f477e from 'nuxt_plugin_swiper_076f477e' // Source: ..\\plugins\\swiper.ts (mode: 'client')
 
 // Component: <ClientOnly>
@@ -175,16 +175,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_1bc601a5 === 'function') {
-    await nuxt_plugin_plugin_1bc601a5(app.context, inject)
+  if (typeof nuxt_plugin_plugin_c46d76a0 === 'function') {
+    await nuxt_plugin_plugin_c46d76a0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_plugin_6770a46f === 'function') {
-    await nuxt_plugin_plugin_6770a46f(app.context, inject)
+  if (typeof nuxt_plugin_plugin_43379578 === 'function') {
+    await nuxt_plugin_plugin_43379578(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3adf0548 === 'function') {
-    await nuxt_plugin_axios_3adf0548(app.context, inject)
+  if (typeof nuxt_plugin_axios_5fbe40d3 === 'function') {
+    await nuxt_plugin_axios_5fbe40d3(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_swiper_076f477e === 'function') {

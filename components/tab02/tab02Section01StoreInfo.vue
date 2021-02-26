@@ -1,7 +1,7 @@
 <template>
 	<div class="store-list">
 		<div class="top-area">
-			<p>{{ activeInfo.storeName }}</p>
+			<p>{{ activeInfo.storeName }}</p><!--2. activeInfo라는 객체를 여기에서 받아서 dom에 뿌려준다.-->
 			<div class="btn-area">
 				<line-type-button 
 					colorType="color-pink"
@@ -29,7 +29,8 @@ import Component from 'vue-class-component';
 
 export default class Tab02Section01StoreInfo extends Vue {
 	
-	@Prop() activeInfo!: object
+	// activeInfo 빈 객체를 Prop으로 만들어준다.
+	@Prop() activeInfo!: Object[]
 
 	// @Prop({default: []})		item!:				Object[]
 	// @Prop({default: ''})		storeInfoName?:		string
