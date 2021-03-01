@@ -21,7 +21,7 @@
 		<div class="wrap thumb-list">
 			<tab-02-section-01-thumb-list
 				:items="thumbList"
-				@click="modalOn"><!-- 4.tab02Section01ThumbList 에서 emit한 click을 연결시킨다.. -->
+				@click="modalOn"><!-- 4.tab02Section01ThumbList 에서 emit한 click을 연결시킨다! -->
 			</tab-02-section-01-thumb-list>
 		</div>
 
